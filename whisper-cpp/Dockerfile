@@ -1,7 +1,7 @@
-ARG BUILD_FROM
+ARG BUILD_FROM=intel/oneapi:2025.0.1-0-devel-ubuntu24.04
 FROM ${BUILD_FROM}
 
-ARG WHISPER_CPP_VERSION
+ARG WHISPER_CPP_VERSION=1.7.4
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
