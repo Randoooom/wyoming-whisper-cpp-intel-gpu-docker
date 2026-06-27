@@ -47,3 +47,5 @@ jobs:
           context: ${{ matrix.context }}
           push: true
           tags: ghcr.io/randoooom/${{ matrix.name }}:latest 
+          cache-from: ghcr.io/randoooom/${{ matrix.name }}:latest
+          cache-to: type=inline
